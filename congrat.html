@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Icon Generator</title>
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <link href="assets/css/app.css" rel="stylesheet">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body id="certificate"> 
+  <h1 class="vh10 text-center">Résultat</h1>
+  <p class="text-center"><b id="player"></b>, Votre résultat est : <b id="result"></b> bonne(s) réponse(s) sur <b id="total"></b></p>
+  <div class="flexbox vh90">
+	<div class="flexbox flex-col w50 flex-center text-center">	  
+	  <p><img src="assets/img/winner.jpg" /></p>	  
+	</div>	
+	<div class="flexbox flex-col w50 flex-center px-2" id="endQuiz">
+		 <p class="text-center"><a href="#">Télécharger mon <br>CERTIFICAT</a></p>	  
+	</div>	
+  </div>
+</body>
+</html>

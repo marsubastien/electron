@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quiiiiz | Questions</title>
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <link href="assets/css/app.css" rel="stylesheet">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body id="quiz"> 
+  <h1 class="vh10 text-center">Bienvenue</h1>
+  <p class="text-right selfTop px-2" id="counter"><span class="current"></span>/5<span class="total"></span></p>
+  <div class="flexbox vh90">
+	<div class="flexbox flex-col w50 flex-center text-center" >
+	  <h2 id="q-title"></h2>	   
+	</div>		
+	<form action="quiz.html" class="flexbox flex-col w50 flex-center px-2" id="quizPage">		
+		<div id="q_container"></div>  
+	  	<input type="hidden" name="step" value="0" />
+		<p class="text-center"><button type="submit">Suivant</button></p>	  
+	</form>	
+  </div>
+</body>
+</html>

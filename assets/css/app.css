@@ -1,0 +1,158 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /*-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;*/
+  -webkit-tap-highlight-color: transparent;
+  text-rendering : optimizeLegibility;
+  overflow:hidden;
+}
+
+html, body {
+  overflow-x:hidden;
+  font-size: 62.5%; /*10px*/
+  font-size: calc(1em * 0.625);
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;  
+  margin: 0;
+  padding: 0;    
+}
+
+body {
+  
+  font-size:15px;
+  font-size:1.5rem;
+  line-height: 1.5; 
+  color: #1f1f1f;
+  color: rgba(0,0,0,.67); 
+}
+
+button, .btn {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  overflow: visible;
+
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.flexbox {display: flex;}
+.flex-col {flex-direction: column;}
+.flex-center {justify-content: center;}
+.text-center {text-align: center;}
+.w50 { width:50%; }
+.vh90{height: 90vh;}
+.px-2 {padding: 0 2rem;}
+.text-right {text-align: right;}
+img {max-width: 100%;}
+#wrapper-title{
+  width: 100%;
+  text-align: center;
+}
+#wrapper-app {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+#canvas_container{
+  grid-column: 1 / 3;
+  grid-row: 1 / 5;  
+  padding-left: 25rem;
+}
+#canvas {
+  width: 32vw;
+  height: 32vw;
+}
+#upload-btn{
+  grid-column: 3 / 3;
+  grid-row: 1/2;
+  text-align: center;
+  
+}
+#upload-btn > img {max-width: 12.8rem;}
+
+#wrapper-actions {
+  padding-top: 3rem;
+  grid-column: 3 / 3;
+  grid-row: 2/4;  
+}
+
+#save-btn {
+  grid-column: 3 / 3;
+  grid-row: 4/5;
+  text-align: center;  
+}
+
+#startQuiz  button, #quizPage button {
+      display: inline-block;
+    height: 4rem;
+    padding: 0 .75rem;
+    background-color: yellowgreen;
+    border-radius: .3rem;
+    color: white;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+}
+.borders {
+  display: flex;
+  justify-content: space-around;
+}
+.borders input {opacity:.1; height:1px; width:1px;}
+
+.borders > label {
+    display: block;
+    position: relative;   
+    color: rgba(0, 0, 0, .6);   
+    border: .2rem solid #7f7f7f;  
+    height: 7rem;
+    width: 7rem;
+}
+
+.borders > label:before, .borders > label:after {
+  content: "";
+    position: absolute;
+    background-color: white;
+    height: 50%;
+    width: 3.5rem;
+}
+
+.borders > label:before {
+  right: -.8rem;
+    top: -.8rem;
+}
+
+.borders > label:after {
+  left: -.8rem;
+    bottom: -.8rem;
+}
+
+.borders input[type="radio"]:checked + label {
+  border-width: .75rem;
+  border-color: #E15554;
+  
+}
+
+label.rounded {
+  border-radius:2rem;
+}
+
+label.circle {
+  border-radius:50%;
+}

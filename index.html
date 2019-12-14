@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quiiiz</title>
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <link href="assets/css/app.css" rel="stylesheet">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body> 
+  <h1 class="vh10 text-center">Bienvenue</h1>
+  <div class="flexbox vh90">
+	<div class="flexbox flex-col w50 flex-center text-center">
+	  <h2>Test de connaissance</h2>
+	  <p>5 questions</p>
+	  <p><img src="assets/img/quizz.png" /></p>	  
+	</div>	
+	<form action="quiz.html" class="flexbox flex-col w50 flex-center px-2" id="startQuiz">
+	  <input type="text" name="firstname" id="firstname" placeholder="Nom" required /> 
+	  <input type="text" name="lastname" id="lastname" placeholder="Prénom" required />
+	  <input type="email" name="email" id="email" placeholder="Email" required />
+	 <p class="text-center"><button type="submit">Démarrer</button></p>
+	  
+	</form>	
+  </div>
+</body>
+</html>
